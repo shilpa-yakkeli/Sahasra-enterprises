@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Banner, Poster & Pamphlet Printing | Sahasra Enterprises</title>
+
+   
+       <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+<style>
+
+/* ==============================
+   BANNER, POSTER & PAMPHLET HERO
+============================== */
+
+.hero {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 100px 0;
+
+    background:
+        linear-gradient(
+            110deg,
+            rgba(7, 30, 59, 0.96),
+            rgba(11, 45, 82, 0.88)
+        ),
+        url("") center/cover no-repeat;
+
+    color: #ffffff;
+}
+
+/* Decorative Circles */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    right: -70px;
+    width: 360px;
+    height: 360px;
+    border: 60px solid rgba(255, 173, 66, 0.10);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -70px;
+    width: 240px;
+    height: 240px;
+    background: rgba(255, 173, 66, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+/* Hero Tag */
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px;
+    margin-bottom: 24px;
+
+    border: 1px solid rgba(255, 173, 66, 0.45);
+    border-radius: 50px;
+    background: rgba(255, 173, 66, 0.12);
+
+    color: #ffbd66;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.hero-tag i {
+    font-size: 16px;
+}
+
+/* Hero Heading */
+.hero h1 {
+    max-width: 850px;
+    margin-bottom: 24px;
+
+    color: #ffffff;
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+/* Hero Description */
+.hero p {
+    max-width: 700px;
+    margin-bottom: 32px;
+
+    color: #e0e8f2;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* Main CTA Button */
+.btn-main {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 15px 28px;
+    margin: 0 12px 12px 0;
+
+    border: 2px solid #ffad42;
+    border-radius: 8px;
+    background: #ffad42;
+    color: #102b50;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.btn-main i {
+    font-size: 19px;
+}
+
+.btn-main:hover {
+    transform: translateY(-4px);
+    border-color: #ffffff;
+    background: #ffffff;
+    color: #102b50;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Outline CTA Button */
+.btn-outline-light-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 15px 28px;
+    margin-bottom: 12px;
+
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    background: transparent;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light-custom:hover {
+    transform: translateY(-4px);
+    border-color: #ffad42;
+    background: #ffad42;
+    color: #102b50;
+}
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 991px) {
+    .hero {
+        min-height: 540px;
+        padding: 85px 0;
+    }
+
+    .hero-content {
+        max-width: 720px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 576px) {
+    .hero {
+        min-height: auto;
+        padding: 75px 0;
+        background-position: center;
+    }
+
+    .hero-tag {
+        padding: 8px 14px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        margin-bottom: 18px;
+        font-size: 33px;
+        line-height: 1.25;
+        letter-spacing: -0.5px;
+    }
+
+    .hero p {
+        margin-bottom: 26px;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .btn-main,
+    .btn-outline-light-custom {
+        width: 100%;
+        padding: 14px 18px;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .hero::before {
+        top: -80px;
+        right: -100px;
+        width: 220px;
+        height: 220px;
+        border-width: 35px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .btn-main,
+    .btn-outline-light-custom {
+        transition: none;
+    }
+}
+</style>
+</head>
+
+
+<body class="homepage">
+
+
+<!-- =========================================================
+     TOP HEADER
+========================================================= -->
+
+<div class="top-header">
+
+<div class="container">
+
+    <div class="top-header-content">
+
+        <a href="tel:+919980452200">
+            <i class="fa fa-phone"></i>
+            +91 9980452200
+        </a>
+
+        <a href="mailto:sjp44747@gmail.com">
+            <i class="fa fa-envelope"></i>
+            sjp44747@gmail.com
+        </a>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- =========================================================
+     MAIN HEADER
+========================================================= -->
+
+<div class="header-line-wrapper">
+
+
+<header class="header-wrapper">
+
+    <div class="container">
+
+        <div class="main-header">
+
+
+            <!-- LOGO -->
+
+            <div class="logo-main">
+
+                <a href="index.html" class="logo">
+
+                    <img src="images/logo2.png"
+                         alt="Sahasra Enterprises Logo"
+                         class="img-responsive">
+
+                </a>
+
+            </div>
+
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button type="button"
+                    class="mobile-menu-btn"
+                    id="mobileMenuBtn"
+                    aria-label="Open Menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+
+            <!-- MAIN MENU -->
+
+            <div class="main-menu" id="mainMenu">
+
+                <ul class="menu">
+
+
+                    <!-- HOME -->
+
+                    <li class="inline-block">
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- ABOUT -->
+
+                    <li class="inline-block">
+
+                        <a href="about.html">
+                            About Us
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- SERVICES -->
+
+                    <li class="inline-block has-mega-menu active">
+
+                        <a href="services.html"
+                           id="servicesMenu">
+
+                            Services
+
+                            <i class="fa fa-angle-down"></i>
+
+                        </a>
+
+
+                        <!-- MEGA MENU -->
+
+                        <div class="mega-menu">
+
+                            <div class="mega-menu-grid">
+
+
+                                <a href="Stationery.html">
+                                    Stationery Products
+                                </a>
+
+
+                                <a href="xerox.html">
+                                    Xerox & Colour Print
+                                </a>
+
+
+                                <a href="project banding.html">
+                                    Project Work Printing & Binding
+                                </a>
+
+
+                                <a href="Lamination.html">
+                                     Lamination & Spiral Binding
+                                </a>
+
+
+                                <a href="LL.html">
+                                    DL / LL / Vehicle Insurance
+                                </a>
+
+
+                                <a href="pan card and passport.html">
+                                    PAN Card / Passport Online
+                                </a>
+
+
+                                <a href="adhar correction.html">
+                                    Aadhar Correction
+                                </a>
+
+
+                                <a href="income cast.html">
+                                    Income / Caste Certificate
+                                </a>
+
+
+                                <a href="e stamp.html">
+                                    E-Stamp & Rental Agreement
+                                </a>
+
+
+                                <a href="bannerandposter.html">
+                                    Banner and Poster Printing
+                                </a>
+
+
+                                <a href="tshirt printing.html">
+                                    Digital and T Shirt Printing
+                                </a>
+
+
+                                
+
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- OUR WORK -->
+
+                    <li class="inline-block">
+
+                        <a href="our work.html">
+                            Our Work
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- CONTACT -->
+
+                    <li class="inline-block">
+
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+</div>
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content"
+             data-aos="fade-up"
+             data-aos-duration="1200">
+
+            <span class="hero-tag">
+
+                <i class="fa-solid fa-print me-2"></i>
+
+                Professional Printing Services
+
+            </span>
+
+
+            <h1>
+                Banner, Poster & Pamphlet Printing
+            </h1>
+
+
+            <p>
+                Make your brand, event or promotion stand out with
+                high-quality banners, posters and pamphlets designed
+                for impactful communication.
+            </p>
+
+
+            <div>
+
+                <a href="https://wa.me/919980452200"
+                   class="btn-main">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Get a Quote
+
+                </a>
+
+
+                <a href="#printing-services"
+                   class="btn-outline-light-custom">
+
+                    Explore Services
+
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     INTRO
+========================================= -->
+
+<section class="section-padding">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+
+            <div class="col-lg-6"
+                 data-aos="fade-right"
+                 data-aos-duration="1000">
+
+                <div class="intro-image">
+
+                    <img src="images/s4.jpg"
+                         alt="Banner Poster Pamphlet Printing">
+
+                    <div class="image-badge">
+
+                        <i class="fa-solid fa-print me-2"></i>
+
+                        Quality Printing
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="intro-content"
+                     data-aos="fade-left"
+                     data-aos-duration="1000">
+
+                    <span class="text-uppercase fw-bold"
+                          style="color:var(--primary); letter-spacing:2px;">
+
+                        Print With Impact
+
+                    </span>
+
+
+                    <h2>
+                        Turn Your Ideas Into Powerful Print
+                    </h2>
+
+
+                    <p>
+                        Whether you are promoting a business, announcing
+                        an event or sharing an important message, quality
+                        printed materials help you communicate clearly
+                        and professionally.
+                    </p>
+
+
+                    <p>
+                        Sahasra Enterprises provides printing assistance
+                        for banners, posters, pamphlets and promotional
+                        materials in different sizes and formats.
+                    </p>
+
+
+                    <ul class="check-list">
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            High-quality printing
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Multiple sizes and formats
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Business & promotional printing
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Suitable for events and campaigns
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PRINTING SERVICES
+========================================= -->
+
+<section class="section-padding services-section"
+         id="printing-services">
+
+    <div class="container">
+
+        <div class="section-title text-center mb-5"
+             data-aos="fade-up">
+
+            <span>What We Print</span>
+
+            <h2>
+                Professional Printing Solutions
+            </h2>
+
+            <p>
+                Choose the right print material for your business,
+                event, promotion or communication requirement.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- Banner -->
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-panorama"></i>
+
+                    </div>
+
+                    <h4>
+                        Banner Printing
+                    </h4>
+
+                    <p>
+                        Attractive banners for shops, businesses,
+                        events, promotions, openings and outdoor
+                        advertising requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Poster -->
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-image"></i>
+
+                    </div>
+
+                    <h4>
+                        Poster Printing
+                    </h4>
+
+                    <p>
+                        Eye-catching posters for advertisements,
+                        events, offers, educational campaigns and
+                        promotional activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Pamphlet -->
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="300">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                    </div>
+
+                    <h4>
+                        Pamphlet Printing
+                    </h4>
+
+                    <p>
+                        Professional pamphlets and flyers for
+                        marketing campaigns, product promotions
+                        and business communication.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Flyer -->
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="400">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-copy"></i>
+
+                    </div>
+
+                    <h4>
+                        Flyer Printing
+                    </h4>
+
+                    <p>
+                        Compact promotional flyers designed to
+                        communicate offers, services and important
+                        business information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Promotional -->
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="500">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-bullhorn"></i>
+
+                    </div>
+
+                    <h4>
+                        Promotional Prints
+                    </h4>
+
+                    <p>
+                        Printed materials for product launches,
+                        special offers, campaigns and promotional
+                        activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Event -->
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="600">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                    </div>
+
+                    <h4>
+                        Event Printing
+                    </h4>
+
+                    <p>
+                        Posters, banners and promotional prints for
+                        birthdays, functions, exhibitions, meetings
+                        and other events.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================================
+     PROCESS
+========================================= -->
+
+<section class="section-padding process-section">
+
+    <div class="container">
+
+        <div class="section-title text-center mb-5"
+             data-aos="fade-up">
+
+            <span>How It Works</span>
+
+            <h2>
+                Simple Printing Process
+            </h2>
+
+            <p>
+                From your idea to the final printed material,
+                we keep the process simple.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <div class="process-card">
+
+                    <div class="process-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <h4>
+                        1. Share Requirement
+                    </h4>
+
+                    <p>
+                        Tell us about your banner, poster,
+                        pamphlet or flyer requirement.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <div class="process-card">
+
+                    <div class="process-icon">
+                        <i class="fa-solid fa-file-arrow-up"></i>
+                    </div>
+
+                    <h4>
+                        2. Share Artwork
+                    </h4>
+
+                    <p>
+                        Provide your design or discuss your
+                        design and printing requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="300">
+
+                <div class="process-card">
+
+                    <div class="process-icon">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+
+                    <h4>
+                        3. Printing
+                    </h4>
+
+                    <p>
+                        Your approved design is prepared
+                        for the selected printing requirement.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="400">
+
+                <div class="process-card">
+
+                    <div class="process-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+
+                    <h4>
+                        4. Final Delivery
+                    </h4>
+
+                    <p>
+                        Receive your completed printed materials
+                        according to the agreed requirement.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-note"
+             data-aos="fade-up">
+
+            <strong>
+                <i class="fa-solid fa-circle-info me-2"></i>
+                Need a custom size?
+            </strong>
+
+            Contact us with your required dimensions, quantity
+            and artwork details. We can help you choose a suitable
+            printing option.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================================
+     CTA
+========================================= -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-box"
+             data-aos="zoom-in"
+             data-aos-duration="1000">
+
+            <h2>
+                Ready to Print Your Next Project?
+            </h2>
+
+            <p>
+                Whether you need banners for your business,
+                posters for an event or pamphlets for a marketing
+                campaign, contact Sahasra Enterprises for your
+                printing requirements.
+            </p>
+
+            <a href="https://wa.me/919980452200"
+               class="btn-main">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Get a Printing Quote
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHATSAPP BUTTON
+========================================================= -->
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-icon">
+    <a href="https://wa.me/919980452200" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+</script>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+<div class="container">
+
+    <div class="row">
+
+
+        <!-- COMPANY INFORMATION -->
+
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <a href="index.html"
+                   class="footer-logo">
+
+                    <img src="images/logo.png"
+                         alt="Sahasra Enterprises Logo">
+
+                </a>
+
+
+                <ul class="footer-address">
+
+
+                    <li>
+
+                        <strong>
+
+                            <i class="fas fa-location-dot"></i>
+                            Address:
+
+                        </strong>
+
+                        31/2, 6th E Main Rd,
+                        Bovipalya, Nagapura,
+                        Bengaluru, Karnataka 560086, India
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>
+
+                            <i class="fas fa-phone"></i>
+                            Phone:
+
+                        </strong>
+
+                        <a href="tel:+919980452200">
+                            +91 9980452200
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>
+
+                            <i class="fas fa-envelope"></i>
+                            Email:
+
+                        </strong>
+
+                        <a href="mailto:sjp44747@gmail.com">
+                            sjp44747@gmail.com
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HELP -->
+
+        <div class="col-xl-2 col-lg-2 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <h5 class="footer-title">
+                    Help
+                </h5>
+
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="our work.html">
+                            Our Work
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SERVICES -->
+
+        <div class="col-xl-2 col-lg-2 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <h5 class="footer-title">
+                    Services
+                </h5>
+
+
+                <ul>
+
+                    <li>
+                        <a href="Stationery.html">
+                            Stationery Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Lamination.html">
+                            Lamination
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="project banding.html">
+                            Project Work
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pan card and passport.html">
+                            Pan Card and Passport
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="xerox.html">
+                            Xerox
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="income cast.html">
+                             Income / Caste Certificate
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MORE SERVICES -->
+
+        <div class="col-xl-2 col-lg-2 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <h5 class="footer-title">
+                    More Services
+                </h5>
+
+
+                <ul>
+
+                    <li>
+                        <a href="adhar correction.html">
+                            Aadhar Correction
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="e stamp.html">
+                            E-Stamp & Rental Agreement 
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="LL.html">
+                            DL / LL / Vehicle Insurance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tshirt printing.html">
+                            Digital and T-Shirt Printing
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="col-xl-2 col-lg-2 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <h5 class="footer-title">
+                    Follow Us
+                </h5>
+
+
+                <p class="footer-social-text">
+
+                    Stay connected with Sahasra Enterprises
+                    for our latest services, offers and updates.
+
+                </p>
+
+
+                <div class="footer-social">
+
+
+                    <!-- FACEBOOK -->
+
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Facebook">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+
+
+                    <!-- INSTAGRAM -->
+
+                    <a href="https://www.instagram.com/_sahasra_enterprises_/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+
+
+                    <!-- LINKEDIN -->
+
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+
+
+                    <!-- WHATSAPP -->
+
+                    <a href="https://wa.me/919980452200"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="WhatsApp">
+
+                        <i class="fab fa-whatsapp"></i>
+
+                    </a>
+
+
+
+                    <!-- YOUTUBE -->
+
+                    <a href="https://www.youtube.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="YouTube">
+
+                        <i class="fab fa-youtube"></i>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- COPYRIGHT -->
+
+<!-- =========================================
+         COPYRIGHT
+    ========================================== -->
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <div class="footer-bottom-content">
+
+                <p>
+                    © 2026 <strong>Sahasra Enterprises</strong>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://staticdevelopers.in/">CDP</a> 
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<!-- jQuery -->
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuButton = document.getElementById("mobileMenuBtn");
+    const mainMenu = document.getElementById("mainMenu");
+    const servicesMenu = document.getElementById("servicesMenu");
+    const serviceParent = document.querySelector(".has-mega-menu");
+
+    if (!menuButton || !mainMenu) return;
+
+    // Open and close mobile navigation
+    menuButton.addEventListener("click", function () {
+        const isOpen = mainMenu.classList.toggle("menu-open");
+
+        menuButton.classList.toggle("active", isOpen);
+        menuButton.setAttribute("aria-expanded", isOpen);
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close Menu" : "Open Menu"
+        );
+    });
+
+    // Expand Services submenu on mobile
+    if (servicesMenu && serviceParent) {
+        servicesMenu.addEventListener("click", function (event) {
+            if (window.innerWidth <= 991) {
+                event.preventDefault();
+
+                const isOpen =
+                    serviceParent.classList.toggle("service-open");
+
+                servicesMenu.setAttribute("aria-expanded", isOpen);
+            }
+        });
+    }
+
+    // Close menu after selecting a link
+    mainMenu.querySelectorAll(".mega-menu a, .menu > li:not(.has-mega-menu) > a")
+        .forEach(function (link) {
+            link.addEventListener("click", function () {
+                if (window.innerWidth <= 991) {
+                    mainMenu.classList.remove("menu-open");
+                    menuButton.classList.remove("active");
+                    menuButton.setAttribute("aria-expanded", "false");
+
+                    if (serviceParent) {
+                        serviceParent.classList.remove("service-open");
+                    }
+                }
+            });
+        });
+
+    // Reset menu when resizing to desktop
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 991) {
+            mainMenu.classList.remove("menu-open");
+            menuButton.classList.remove("active");
+            menuButton.setAttribute("aria-expanded", "false");
+
+            if (serviceParent) {
+                serviceParent.classList.remove("service-open");
+            }
+        }
+    });
+
+});
+</script>
+
+
+</body>
+
+</html>
