@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Work Printing & Binding | Sahasra Enterprises</title>
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+<style>
+
+
+/* ========================================
+   PROJECT HERO SECTION
+======================================== */
+
+.project-hero {
+    position: relative;
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    padding: 100px 0 150px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 30, 65, 0.95) 0%,
+            rgba(8, 30, 65, 0.82) 50%,
+            rgba(8, 30, 65, 0.40) 100%
+        ),
+        url("");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+/* Optional decorative glow */
+
+.project-hero::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    right: -100px;
+    top: 50px;
+    background: rgba(255, 153, 51, 0.12);
+    border-radius: 50%;
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+.project-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================================
+   HERO CONTENT
+======================================== */
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 20px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
+    color: #ffbd59;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-label i {
+    font-size: 17px;
+}
+
+.hero-content h1 {
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: clamp(38px, 5vw, 68px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.hero-content h1 span {
+    display: block;
+    margin-top: 8px;
+    color: #ffad42;
+}
+
+.hero-content p {
+    max-width: 640px;
+    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* ========================================
+   HERO BUTTONS
+======================================== */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-primary-custom,
+.btn-outline-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    padding: 15px 27px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom {
+    border: 2px solid #ffad42;
+    background: #ffad42;
+    color: #102b50;
+    box-shadow: 0 8px 25px rgba(255, 173, 66, 0.20);
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-4px);
+    border-color: #ffffff;
+    background: #ffffff;
+    color: #102b50;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+}
+
+.btn-primary-custom i {
+    transition: transform 0.3s ease;
+}
+
+.btn-primary-custom:hover i {
+    transform: translateX(5px);
+}
+
+.btn-outline-custom {
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    background: transparent;
+    color: #ffffff;
+}
+
+.btn-outline-custom:hover {
+    transform: translateY(-4px);
+    border-color: #25d366;
+    background: #25d366;
+    color: #ffffff;
+}
+
+.btn-outline-custom i {
+    font-size: 19px;
+}
+
+/* ========================================
+   HERO INFO BAR
+======================================== */
+
+.hero-info {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 -8px 35px rgba(0, 0, 0, 0.12);
+}
+
+.hero-info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    min-height: 95px;
+    padding: 20px 12px;
+    color: #193454;
+    transition: all 0.3s ease;
+}
+
+.hero-info-item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    background: #fff1dc;
+    color: #e98a19;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.hero-info-item span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.hero-info .col-6:not(:last-child) .hero-info-item {
+    border-right: 1px solid #e9edf2;
+}
+
+.hero-info-item:hover {
+    background: #f8fafc;
+}
+
+.hero-info-item:hover i {
+    transform: translateY(-3px);
+    background: #ffad42;
+    color: #ffffff;
+}
+
+/* ========================================
+   TABLET RESPONSIVE
+======================================== */
+
+@media (max-width: 991px) {
+
+    .project-hero {
+        min-height: 650px;
+        padding: 90px 0 145px;
+        background-position: 60% center;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(38px, 6vw, 54px);
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-info-item {
+        min-height: 85px;
+        gap: 10px;
+        padding: 15px 8px;
+    }
+
+    .hero-info-item i {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .hero-info-item span {
+        font-size: 12px;
+    }
+}
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 575px) {
+
+    .project-hero {
+        min-height: auto;
+        padding: 75px 0 0;
+        background-position: 65% center;
+    }
+
+    .hero-content {
+        padding-bottom: 55px;
+    }
+
+    .hero-label {
+        gap: 8px;
+        padding: 9px 14px;
+        margin-bottom: 20px;
+        font-size: 11px;
+        letter-spacing: 0.7px;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 20px;
+        font-size: 37px;
+        line-height: 1.2;
+        letter-spacing: -0.8px;
+    }
+
+    .hero-content h1 span {
+        margin-top: 5px;
+    }
+
+    .hero-content p {
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hero-buttons {
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .btn-primary-custom,
+    .btn-outline-custom {
+        width: 100%;
+        min-height: 50px;
+        padding: 13px 15px;
+        font-size: 14px;
+    }
+
+    .hero-info {
+        position: relative;
+    }
+
+    .hero-info-item {
+        min-height: 80px;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 12px 10px;
+    }
+
+    .hero-info .col-6:nth-child(2) .hero-info-item {
+        border-right: none;
+    }
+
+    .hero-info .col-6:nth-child(-n+2) .hero-info-item {
+        border-bottom: 1px solid #e9edf2;
+    }
+
+    .hero-info-item i {
+        width: 35px;
+        height: 35px;
+        border-radius: 9px;
+        font-size: 15px;
+    }
+
+    .hero-info-item span {
+        font-size: 11px;
+    }
+}
+
+/* ========================================
+   EXTRA SMALL MOBILE
+======================================== */
+
+@media (max-width: 360px) {
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-label {
+        font-size: 10px;
+    }
+
+    .hero-info-item {
+        gap: 7px;
+        padding: 10px 7px;
+    }
+
+    .hero-info-item i {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .hero-info-item span {
+        font-size: 10px;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .project-hero *,
+    .project-hero *::before,
+    .project-hero *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+</style>
+</head>
+
+
+<body class="homepage">
+
+
+<!-- =========================================================
+     TOP HEADER
+========================================================= -->
+
+<div class="top-header">
+
+<div class="container">
+
+    <div class="top-header-content">
+
+        <a href="tel:+919980452200">
+            <i class="fa fa-phone"></i>
+            +91 9980452200
+        </a>
+
+        <a href="mailto:sjp44747@gmail.com">
+            <i class="fa fa-envelope"></i>
+            sjp44747@gmail.com
+        </a>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- =========================================================
+     MAIN HEADER
+========================================================= -->
+
+<div class="header-line-wrapper">
+
+
+<header class="header-wrapper">
+
+    <div class="container">
+
+        <div class="main-header">
+
+
+            <!-- LOGO -->
+
+            <div class="logo-main">
+
+                <a href="index.html" class="logo">
+
+                    <img src="images/logo2.png"
+                         alt="Sahasra Enterprises Logo"
+                         class="img-responsive">
+
+                </a>
+
+            </div>
+
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button type="button"
+                    class="mobile-menu-btn"
+                    id="mobileMenuBtn"
+                    aria-label="Open Menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+
+            <!-- MAIN MENU -->
+
+            <div class="main-menu" id="mainMenu">
+
+                <ul class="menu">
+
+
+                    <!-- HOME -->
+
+                    <li class="inline-block">
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- ABOUT -->
+
+                    <li class="inline-block">
+
+                        <a href="about.html">
+                            About Us
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- SERVICES -->
+
+                    <li class="inline-block has-mega-menu">
+
+                        <a href="services.html"
+                           id="servicesMenu">
+
+                            Services
+
+                            <i class="fa fa-angle-down"></i>
+
+                        </a>
+
+
+                        <!-- MEGA MENU -->
+
+                        <div class="mega-menu">
+
+                            <div class="mega-menu-grid">
+
+
+                                <a href="">
+                                    Stationery Products
+                                </a>
+
+
+                                <a href="">
+                                    Xerox & Colour Print
+                                </a>
+
+
+                                <a href="">
+                                    Project Work Printing & Binding
+                                </a>
+
+
+                                <a href="">
+                                     Lamination & Spiral Binding
+                                </a>
+
+
+                                <a href="">
+                                    DL / LL / Vehicle Insurance
+                                </a>
+
+
+                                <a href="">
+                                    PAN Card / Passport Online
+                                </a>
+
+
+                                <a href="">
+                                    Aadhar Correction
+                                </a>
+
+
+                                <a href="">
+                                    Income / Caste Certificate
+                                </a>
+
+
+                                <a href="">
+                                    E-Stamp & Rental Agreement
+                                </a>
+
+
+                                <a href="">
+                                    Banner and Poster Printing
+                                </a>
+
+
+                                <a href="">
+                                    Digital and T Shirt Printing
+                                </a>
+
+
+                                
+
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+
+
+                    <!-- OUR WORK -->
+
+                    <li class="inline-block">
+
+                        <a href="our work.html">
+                            Our Work
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- CONTACT -->
+
+                    <li class="inline-block">
+
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+</div>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="project-hero"
+         id="home">
+
+    <div class="container">
+
+        <div class="hero-content"
+             data-aos="fade-right"
+             data-aos-duration="1200">
+
+            <div class="hero-label">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                Print • Bind • Submit
+
+            </div>
+
+
+            <h1>
+
+                Your Project,
+
+                <span>Professionally Printed.</span>
+
+            </h1>
+
+
+            <p>
+
+                Complete project work printing and binding
+                solutions for students, schools, colleges
+                and professionals — from the first page
+                to the final binding.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#services"
+                   class="btn-primary-custom">
+
+                    Explore Services
+
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+
+                </a>
+
+
+                <a href="https://wa.me/919980452200"
+                   target="_blank"
+                   class="btn-outline-custom">
+
+                    <i class="fa-brands fa-whatsapp me-2"></i>
+
+                    Send Project
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO INFO -->
+
+    <div class="hero-info">
+
+        <div class="container">
+
+            <div class="row g-0">
+
+                <div class="col-6 col-md-3">
+
+                    <div class="hero-info-item">
+
+                        <i class="fa-solid fa-print"></i>
+
+                        <span>
+                            Quality Printing
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <div class="hero-info-item">
+
+                        <i class="fa-solid fa-book"></i>
+
+                        <span>
+                            Professional Binding
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <div class="hero-info-item">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                        <span>
+                            Fast Turnaround
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-md-3">
+
+                    <div class="hero-info-item">
+
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                        <span>
+                            Student Friendly
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section class="section-padding"
+         id="services">
+
+    <div class="container">
+
+        <div class="section-title"
+             data-aos="fade-up">
+
+            <span>
+                Project Services
+            </span>
+
+            <h2>
+                Everything Your Project Needs
+            </h2>
+
+            <p>
+
+                From printing individual pages to complete
+                project finishing, we provide all the services
+                needed to prepare your project professionally.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-print"></i>
+
+                    </div>
+
+                    <h4>
+                        Project Printing
+                    </h4>
+
+                    <p>
+
+                        High-quality black & white and colour
+                        printing for academic projects, reports,
+                        assignments and documentation.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-book"></i>
+
+                    </div>
+
+                    <h4>
+                        Spiral Binding
+                    </h4>
+
+                    <p>
+
+                        Neat and durable spiral binding for
+                        assignments, project reports, notes
+                        and presentations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                    </div>
+
+                    <h4>
+                        Hard Binding
+                    </h4>
+
+                    <p>
+
+                        Professional hard binding for final-year
+                        projects, dissertations, reports and
+                        important academic submissions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                    </div>
+
+                    <h4>
+                        Soft Binding
+                    </h4>
+
+                    <p>
+
+                        Affordable and clean soft binding for
+                        project reports, assignments and
+                        everyday documentation.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-image"></i>
+
+                    </div>
+
+                    <h4>
+                        Colour Pages
+                    </h4>
+
+                    <p>
+
+                        Vibrant colour printing for project
+                        covers, diagrams, charts, photographs
+                        and presentations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                    </div>
+
+                    <h4>
+                        Bulk Project Orders
+                    </h4>
+
+                    <p>
+
+                        Multiple project copies for classrooms,
+                        colleges, institutions and group submissions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- =========================================================
+     BINDING TYPES
+========================================================= -->
+
+<section class="section-padding binding-section"
+         id="binding">
+
+    <div class="container">
+
+        <div class="section-title"
+             data-aos="fade-up">
+
+            <span>
+                Binding Options
+            </span>
+
+            <h2>
+                Choose The Right Finish
+            </h2>
+
+            <p>
+
+                Give your project a clean and professional
+                finish with our range of binding options.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- SPIRAL -->
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up">
+
+                <div class="binding-card">
+
+                    <div class="binding-image">
+
+                        <img src="images/Spiral Binding.jpg"
+                             alt="Spiral Binding">
+
+                    </div>
+
+
+                    <div class="binding-content">
+
+                        <h4>
+                            Spiral Binding
+                        </h4>
+
+                        <p>
+
+                            Flexible, practical and affordable
+                            binding for assignments and project
+                            reports.
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Easy Page Turning
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Durable Finish
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Student Friendly
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOFT -->
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <div class="binding-card">
+
+                    <div class="binding-image">
+
+                        <img src="images/Soft Binding.jpg"
+                             alt="Soft Binding">
+
+                    </div>
+
+
+                    <div class="binding-content">
+
+                        <h4>
+                            Soft Binding
+                        </h4>
+
+                        <p>
+
+                            A clean and economical option for
+                            reports, assignments and everyday
+                            documentation.
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Professional Look
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Affordable
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Neat Finish
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HARD -->
+
+            <div class="col-lg-4 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <div class="binding-card">
+
+                    <div class="binding-image">
+
+                        <img src="images/Hard Binding.jpg"
+                             alt="Hard Binding">
+
+                    </div>
+
+
+                    <div class="binding-content">
+
+                        <h4>
+                            Hard Binding
+                        </h4>
+
+                        <p>
+
+                            Premium binding for final-year projects,
+                            dissertations and important academic
+                            submissions.
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Premium Finish
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Strong & Durable
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Professional Presentation
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- =========================================================
+     PROCESS
+========================================================= -->
+
+<section class="section-padding"
+         id="process">
+
+    <div class="container">
+
+        <div class="section-title"
+             data-aos="fade-up">
+
+            <span>
+                Simple Process
+            </span>
+
+            <h2>
+                Your Project In 4 Easy Steps
+            </h2>
+
+            <p>
+
+                From sending your file to collecting your
+                finished project, we keep everything simple.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up">
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        01
+                    </div>
+
+                    <h4>
+                        Send Your File
+                    </h4>
+
+                    <p>
+
+                        Send your PDF or document through
+                        WhatsApp, email or bring it to our store.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        02
+                    </div>
+
+                    <h4>
+                        Choose Printing
+                    </h4>
+
+                    <p>
+
+                        Select black & white or colour printing
+                        according to your project requirement.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        03
+                    </div>
+
+                    <h4>
+                        Select Binding
+                    </h4>
+
+                    <p>
+
+                        Choose spiral, soft or hard binding
+                        based on your project type.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="300">
+
+                <div class="process-card">
+
+                    <div class="process-number">
+                        04
+                    </div>
+
+                    <h4>
+                        Collect Your Project
+                    </h4>
+
+                    <p>
+
+                        Receive your completed project,
+                        professionally printed and bound.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =========================================================
+     WHATSAPP BUTTON
+========================================================= -->
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-icon">
+    <a href="https://wa.me/919980452200" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+</script>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+
+<div class="container">
+
+    <div class="row">
+
+
+        <!-- COMPANY INFORMATION -->
+
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <a href="index.html"
+                   class="footer-logo">
+
+                    <img src="images/logo.png"
+                         alt="Sahasra Enterprises Logo">
+
+                </a>
+
+
+                <ul class="footer-address">
+
+
+                    <li>
+
+                        <strong>
+
+                            <i class="fas fa-location-dot"></i>
+                            Address:
+
+                        </strong>
+
+                        31/2, 6th E Main Rd,
+                        Bovipalya, Nagapura,
+                        Bengaluru, Karnataka 560086, India
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>
+
+                            <i class="fas fa-phone"></i>
+                            Phone:
+
+                        </strong>
+
+                        <a href="tel:+919980452200">
+                            +91 9980452200
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>
+
+                            <i class="fas fa-envelope"></i>
+                            Email:
+
+                        </strong>
+
+                        <a href="mailto:sjp44747@gmail.com">
+                            sjp44747@gmail.com
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HELP -->
+
+        <div class="col-xl-2 col-lg-2 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <h5 class="footer-title">
+                    Help
+                </h5>
+
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="our work.html">
+                            Our Work
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SERVICES -->
+
+        <div class="col-xl-2 col-lg-2 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <h5 class="footer-title">
+                    Services
+                </h5>
+
+
+                <ul>
+
+                    <li>
+                        <a href="Stationery.html">
+                            Stationery Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Lamination.html">
+                            Lamination
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="project banding.html">
+                            Project Work
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pan card and passport.html">
+                            Pan Card and Passport
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="xerox.html">
+                            Xerox
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="income cast.html">
+                             Income / Caste Certificate
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- MORE SERVICES -->
+
+        <div class="col-xl-2 col-lg-2 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <h5 class="footer-title">
+                    More Services
+                </h5>
+
+
+                <ul>
+
+                    <li>
+                        <a href="adhar correction.html">
+                            Aadhar Correction
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="e stamp.html">
+                            E-Stamp & Rental Agreement 
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="LL.html">
+                            DL / LL / Vehicle Insurance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tshirt printing.html">
+                            Digital and T-Shirt Printing
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="col-xl-2 col-lg-2 col-md-6 mb-5">
+
+            <div class="footer-column">
+
+                <h5 class="footer-title">
+                    Follow Us
+                </h5>
+
+
+                <p class="footer-social-text">
+
+                    Stay connected with Sahasra Enterprises
+                    for our latest services, offers and updates.
+
+                </p>
+
+
+                <div class="footer-social">
+
+
+                    <!-- FACEBOOK -->
+
+                    <a href="https://www.facebook.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Facebook">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+
+
+                    <!-- INSTAGRAM -->
+
+                    <a href="https://www.instagram.com/_sahasra_enterprises_/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+
+
+                    <!-- LINKEDIN -->
+
+                    <a href="https://www.linkedin.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+
+
+                    <!-- WHATSAPP -->
+
+                    <a href="https://wa.me/919980452200"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="WhatsApp">
+
+                        <i class="fab fa-whatsapp"></i>
+
+                    </a>
+
+
+
+                    <!-- YOUTUBE -->
+
+                    <a href="https://www.youtube.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="YouTube">
+
+                        <i class="fab fa-youtube"></i>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- COPYRIGHT -->
+
+<!-- =========================================
+         COPYRIGHT
+    ========================================== -->
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <div class="footer-bottom-content">
+
+                <p>
+                    © 2026 <strong>Sahasra Enterprises</strong>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://staticdevelopers.in/">CDP</a> 
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<!-- jQuery -->
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuButton = document.getElementById("mobileMenuBtn");
+    const mainMenu = document.getElementById("mainMenu");
+    const servicesMenu = document.getElementById("servicesMenu");
+    const serviceParent = document.querySelector(".has-mega-menu");
+
+    if (!menuButton || !mainMenu) return;
+
+    // Open and close mobile navigation
+    menuButton.addEventListener("click", function () {
+        const isOpen = mainMenu.classList.toggle("menu-open");
+
+        menuButton.classList.toggle("active", isOpen);
+        menuButton.setAttribute("aria-expanded", isOpen);
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close Menu" : "Open Menu"
+        );
+    });
+
+    // Expand Services submenu on mobile
+    if (servicesMenu && serviceParent) {
+        servicesMenu.addEventListener("click", function (event) {
+            if (window.innerWidth <= 991) {
+                event.preventDefault();
+
+                const isOpen =
+                    serviceParent.classList.toggle("service-open");
+
+                servicesMenu.setAttribute("aria-expanded", isOpen);
+            }
+        });
+    }
+
+    // Close menu after selecting a link
+    mainMenu.querySelectorAll(".mega-menu a, .menu > li:not(.has-mega-menu) > a")
+        .forEach(function (link) {
+            link.addEventListener("click", function () {
+                if (window.innerWidth <= 991) {
+                    mainMenu.classList.remove("menu-open");
+                    menuButton.classList.remove("active");
+                    menuButton.setAttribute("aria-expanded", "false");
+
+                    if (serviceParent) {
+                        serviceParent.classList.remove("service-open");
+                    }
+                }
+            });
+        });
+
+    // Reset menu when resizing to desktop
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 991) {
+            mainMenu.classList.remove("menu-open");
+            menuButton.classList.remove("active");
+            menuButton.setAttribute("aria-expanded", "false");
+
+            if (serviceParent) {
+                serviceParent.classList.remove("service-open");
+            }
+        }
+    });
+
+});
+</script>
+
+
+</body>
+
+</html>
+
